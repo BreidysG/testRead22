@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 22</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Hansel y Gretel
+                <br><br>
+                Había una vez un leñador y su esposa que vivían en el bosque en una humilde cabaña con sus dos hijos, Hansel y Gretel. Trabajaban mucho para darles de comer pero nunca ganaban lo suficiente. Un día viendo que ya no eran capaces de alimentarlos y que los niños pasaban mucha hambre, el matrimonio se sentó a la mesa y amargamente tuvo que tomar una decisión.
+                <br><br>
+                - No podemos hacer otra cosa. Los dejaremos en el bosque con la esperanza de que alguien de buen corazón y mejor situación que nosotros, pueda hacerse cargo de ellos, dijo la madre.
+                <br><br>
+                Los niños, que no podían dormir de hambre que tenían, oyeron toda la conversación y comenzaron a llorar en cuanto supieron el final que les esperaba. Hansel, el niño, dijo a su hermana:
+                <br><br>
+                - No te preocupes. Encontraré la forma de regresar a casa. Confía en mí. Así que al día siguiente fueron los cuatro al bosque, los niños se quedaron junto a una hoguera y no tardaron en quedarse dormidos. Cuando despertaron no había rastro de sus padres y la pequeña Gretel empezó a llorar.
+                <br><br>
+                - No llores dijo Hansel. He ido dejando trocitos de pan a lo largo de todo el camino. Sólo tenemos que esperar a que la luna salga y podremos ver el camino que nos llevará a casa.
+                <br><br>
+                Pero la luna salió y no había rastro de los trozos de pan: se los habían comido las palomas. Así que los niños anduvieron perdidos por el bosque hasta que estuvieron exhaustos y no pudieron dar un paso más del hambre que tenían. Justo entonces, se encontraron con una casa de ensueño hecha de pan y cubierta de bizcocho y cuyas ventanas eran de azúcar.
+                <br><br>
+                Tenían tanta hambre, que enseguida se lanzaron a comer sobre ella. De repente se abrió la puerta de la casa y salió de ella una vieja que parecía amable. - Hola niños, ¿qué hacéis aquí? ¿Acaso tenéis hambre? Los pobres niños asintieron con la cabeza.
+                <br><br>
+                - Anda, entrad dentro y os prepararé algo muy rico. La vieja les dio de comer y les ofreció una cama en la que dormir. Pero pese a su bondad, había algo raro en ella.
+                <br><br>
+                Por la mañana temprano, cogió a Hansel y lo encerró en el establo mientras el pobre no dejaba de gritar. - ¡Aquí te quedarás hasta que engordes!, le dijo
+                <br><br>
+                Con muy malos modos despertó a su hermana y le dijo que fuese por agua para preparar algo de comer, pues su hermano debía engordar cuanto antes para poder comérselo. La pequeña Gretel se dio cuenta entonces de que no era una vieja, sino una malvada bruja.
+                <br><br>
+                Pasaban los días y la bruja se impacientaba porque no veía engordar a Hansel, ya que este cuando le decía que le mostrara un dedo para ver si había engordado, siempre la engañaba con un huesecillo aprovechándose de su ceguera.
+                <br><br>
+                De modo un día la bruja se cansó y decidió no esperar más.
+                <br><br>
+                - ¡Gretel, prepara el horno que vas a amasar pan! ordenó a la niña. La niña se imaginó algo terrible, y supo que en cuanto se despistara la bruja la arrojaría dentro del horno.
+                <br><br>
+                - No sé cómo se hace - dijo la niña
+                <br><br>
+                - ¡Niña tonta! ¡Quita del medio!
+                <br><br>
+                Pero cuando la bruja metió la cabeza dentro del horno, la pequeña le dio un buen empujón y cerró la puerta. Acto seguido corrió hasta el establo para liberar a su hermano.
+                <br><br>
+                Los dos pequeños se abrazaron y lloraron de alegría al ver que habían salido vivos de aquella horrible situación. Estaban a punto de marcharse cuando se les ocurrió echar un vistazo por la casa de la bruja y, ¡qué sorpresa! Encontraron cajas llenas de perlas y piedras preciosas, así que se llenaron los bolsillos y se dispusieron a volver a casa. Pero cuando llegaron al río y vieron que no había ni una tabla ni una bar...
+            </p>
+            
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
