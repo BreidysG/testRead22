@@ -20,54 +20,55 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             question: "¿Quiénes son los integrantes del cuento?",
             answers: [
-                "Los papás, Hansel, Gretel y la mujer vieja",
-                "Hansel y Gretel",
-                "La bruja, Hansel y Gretel",
-                "Los papás de los niños"
+                "El leñador, la madrastra, Hansel, Gretel, la bruja y los patos",
+                "Hansel, Gretel y la bruja",
+                "Los papás de Hansel y Gretel y una mujer vieja",
+                "Hansel, Gretel y los patos"
             ],
-            correctAnswer: "La bruja, Hansel y Gretel"
+            correctAnswer: "El leñador, la madrastra, Hansel, Gretel, la bruja y los patos"
         },
         {
             question: "¿Qué hicieron los papás de Hansel y Gretel?",
             answers: [
-                "Buscaron que darles de comer en el bosque",
-                "Los dejaron con la mujer vieja",
-                "Los dejaron en el bosque",
-                "Comieron hasta quedar dormidos"
+                "Buscaron qué darles de comer en el bosque",
+                "Decidieron dejarlos en el bosque con la esperanza de que alguien más los ayudara",
+                "Los dejaron con una mujer vieja que vivía en el bosque",
+                "Los enviaron a recoger madera y nunca volvieron a buscarlos"
             ],
-            correctAnswer: "Los dejaron en el bosque"
+            correctAnswer: "Decidieron dejarlos en el bosque con la esperanza de que alguien más los ayudara"
         },
         {
-            question: "¿Realmente qué quería hacer la mujer vieja con los niños?",
+            question: "¿Qué quería hacer la bruja con los niños?",
             answers: [
-                "Jugar a las escondidas",
-                "Comérselos",
-                "Bañarlos para llevarlos donde los papás",
-                "Dejarlos en el bosque solos"
+                "Adoptarlos como sus hijos",
+                "Comérselos después de engordar a Hansel",
+                "Prepararles comida para enviarlos de vuelta con sus padres",
+                "Asustarlos para que no volvieran al bosque"
             ],
-            correctAnswer: "Comérselos"
+            correctAnswer: "Comérselos después de engordar a Hansel"
         },
         {
             question: "¿Qué pasó con los trocitos de pan que dejó Hansel por el camino?",
             answers: [
-                "Se los comió el perro",
-                "La mujer vieja los cogió",
-                "Las palomas se los comieron",
-                "Los arrastró el viento"
+                "Los arrastró el viento",
+                "Se los comieron las palomas",
+                "La bruja los recogió",
+                "Los escondió Gretel por error"
             ],
-            correctAnswer: "Las palomas se los comieron"
+            correctAnswer: "Se los comieron las palomas"
         },
         {
-            question: "¿Los hermanos nuevamente llegaron a casa de sus papás, y qué llevaban en los bolsillos?",
+            question: "¿Qué llevaban Hansel y Gretel en los bolsillos cuando regresaron a casa?",
             answers: [
                 "Perlas y piedras preciosas",
-                "Trozos de pan",
-                "Mucha comida",
-                "Un pato para preparar"
+                "Trozos de pan para compartir",
+                "Juguetes de la casa de la bruja",
+                "Un pato que los ayudó a cruzar el río"
             ],
             correctAnswer: "Perlas y piedras preciosas"
         }
     ];
+    
     
     
     // Función para contar las palabras en el texto
